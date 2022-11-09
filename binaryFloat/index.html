@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float to Binary</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="body">
+    <div class="container">
+      <div id="result2" class="result">
+        <p id="result"></p>
+      </div>
+      <div id="teste2" class="teste">
+        <p id="teste"></p>
+      </div>
+      <div class="header">
+        <h1>Float To Binary</h1>
+      </div>
+      <div class="content">
+        <div class="form">
+          <input
+            id="number"
+            type="number"
+            name="number"
+            placeholder="Enter a number"
+          />
+          <input
+            type="submit"
+            id="button"
+            value="Convert"
+            onclick="binaryFloat(document.getElementById('number').value.replace(',', '.'))"
+          />
+        </div>
+        
+        <div class="img">
+          <img src="./sabo.png" id="img"/>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./binaryFloat.js"></script>
+</html>
